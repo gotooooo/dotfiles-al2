@@ -1,0 +1,34 @@
+[alias]
+  st = status --short --branch
+  co = checkout
+  fe = fetch
+  br = branch
+  ci = commit
+  cia = commit --amend
+  ad = add
+  rb = rebase
+  pl = pull
+  plr = pull --rebase
+  cp = cherry-pick
+  lg   = log --graph --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lga  = log --graph --color --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
+  lgns = log --graph --color --decorate --oneline --name-status
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  quotepath = false
+  editor = /usr/bin/vim
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
+[merge]
+  tool = vimdiff
+[mergetool]
+  prompt = false
+[fetch]
+  prune = true
+[pull]
+  rebase = false
